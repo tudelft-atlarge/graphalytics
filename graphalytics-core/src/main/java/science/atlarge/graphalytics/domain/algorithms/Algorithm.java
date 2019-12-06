@@ -41,6 +41,7 @@ public enum Algorithm {
 	LCC("LCC", "Local clustering coefficient", EmptyParametersFactory.class, EpsilonValidationRule.class),
 	PR("PR", "PageRank", PageRankParameters.PageRankParametersFactory.class, EpsilonValidationRule.class),
 	SSSP("SSSP", "Single source shortest paths", SingleSourceShortestPathsParameters.SingleSourceShortestPathsParametersFactory.class, EpsilonValidationRule.class),
+	TC("TC", "TriangleCount", EmptyParametersFactory.class, MatchLongValidationRule.class),
 	WCC("WCC", "Connected components", EmptyParametersFactory.class, EquivalenceValidationRule.class),
 
 	// Previously supported algorithms
